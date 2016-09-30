@@ -105,10 +105,12 @@ if [ "${LDAP_ENABLED}" = true ]
         <groupObjectClass>${LDAP_GROUP_OBJECT_CLASS:-groupOfUniqueNames}</groupObjectClass>
         <preferredPasswordEncoding>${LDAP_PREFERRED_PASSWORD_ENCODING:-crypt}</preferredPasswordEncoding>
         <userIdAttribute>${LDAP_USER_ID_ATTRIBUTE:-uid}</userIdAttribute>
-        <userPasswordAttribute>${LDAP_USER_PASSWORD_ATTRIBUTE:-password}</userPasswordAttribute>
+        <userPasswordAttribute>${LDAP_USER_PASSWORD_ATTRIBUTE-password}</userPasswordAttribute>
         <userObjectClass>${LDAP_USER_OBJECT_CLASS:-inetOrgPerson}</userObjectClass>
         <userBaseDn>${LDAP_USER_BASE_DN}</userBaseDn>
         <userRealNameAttribute>${LDAP_USER_REAL_NAME_ATTRIBUTE:-cn}</userRealNameAttribute>
+        <userSubtree>${LDAP_USER_SUBTREE:-false}</userSubtree>
+        <groupSubtree>${LDAP_GROUP_SUBTREE:-false}</groupSubtree>
       </userAndGroupConfig>"
   ;;
 
