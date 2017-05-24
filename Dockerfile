@@ -31,3 +31,4 @@ COPY resources/ /resources/
 RUN chmod u+x /usr/local/bin/nexus.sh
 
 ENTRYPOINT ["/usr/local/bin/nexus.sh"]
+
